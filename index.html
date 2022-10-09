@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Box Shadow Generator</title>
+  </head>
+  <body>
+    
+    <div class="inputs">
+      <h1>Box Shadow Generator</h1>
+      <form>
+      <label for="horizontal-shadow"
+        >Horizontal shadow: <input
+          type="range"
+          name="horizontal-shadow"
+          min="-200"
+          max="200"
+          value="20"
+      /></label>
+
+      <label for="vertical-shadow"
+        >Vertical shadow: <input
+          type="range"
+          name="vertical-shadow"
+          min="-200"
+          max="200"
+          value="20"
+      /></label>
+
+      <label for="shadow-size"
+        >Shadow size: <input type="range" name="shadow-size" min="0" max="200" value="2"
+      /></label>
+
+      <label for="blur-radius"
+        >Blur radius: <input type="range" name="blur-radius" value="20"
+      /></label>
+
+      <label for="border-radius"
+        >Border radius: <input type="range" name="border-radius" value="0"
+      /></label>
+
+      <label for="background-color"
+        >Background color: <input class="color" type="color" name="background-color" value="#00ccff"
+      /></label>
+
+      <label for="shadow-color"
+        >Shadow color:
+        <input class="color" type="text" name="shadow-color" placeholder="type color here" value="rgba(0,0,0,1)"
+      /></label>
+    </form>
+    </div>
+
+    <div class="example">
+      <!-- <div class="squares"> -->
+        <div class="square"></div>
+      </div>
+    </div>
+
+    <div class="input-with-output">
+      <form>
+        <label for="output"
+        >Code: <input class="final-output" type="text" name="output"
+      /></label>
+      </form>
+    </div>
+
+    <footer>
+      <a href="https://github.com/AlanEzequielVargas" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360" alt="logo github"><p>®by Alan Vargas</p></a>
+    </footer>
+    
+  </body>
+  <script src="/app2.js"></script>
+</html>
